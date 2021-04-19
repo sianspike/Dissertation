@@ -1,0 +1,112 @@
+\begin{table}[H]
+    \centering
+    \caption{Table defining the revised functional and non-functional requirements.}
+    \begin{tabular}{|p{7cm}|p{7cm}|}
+        \hline
+        Functional& Non-functional\\
+        \hline
+        The user shall have the option to sign in with either email or Facebook.& The application shall do this by displaying "Login with Facebook" as a button and an email and password text field on the sign in page.\\
+        \hline
+        The user shall have the option to sign up with either email or Facebook.& The application shall do this by displaying "Sign up with Facebook" as a button and an email and password text field on the sign up page.\\
+        \hline
+        The user shall have the option to reset their password if they are unable to sign in.& The application shall do this by displaying a clickable button that takes the user to the reset password process.\\
+        \hline
+        The application shall display the title screen on application start up.&\\
+        \hline
+        The application shall display dashboard as default screen on application start up.&\\
+        \hline
+        The application shall display events, tasks, reminders and suggestions relevant to the time frame option selected in the dashboard (today, this week, this month).& The application shall do this by allowing the user to swipe left or right on the time frame displayed in the dashboard to change the time frame displayed.\\
+        \hline
+        The user shall be able to keep track of their streak count everytime they complete an item.& The application shall do this by adding points to the streak counter displayed on the dashboard.\\
+        \hline
+        The user shall be able to add an item to their agenda.& The application shall do this by displaying an "add" button on the dashboard, and navigating the user to the relevant screen when that button is tapped.\\
+        \hline
+        The user shall be able to switch between the agenda view and the calendar view when viewing the dashboard.& The application shall do this by allowing the user to swipe left or right on the view displayed in the dashboard to switch between agenda view and calendar view.\\
+        \hline
+    \end{tabular}
+\end{table}
+    
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{7cm}|p{7cm}|}
+        \hline
+        Functional& Non-functional\\
+        \hline
+        The user shall be able to view their items in the calendar view in the dashboard.&  The application shall do this by displaying the items in the correct times or dates when the calendar view is in the foreground.\\
+        \hline
+        The user shall be able to use the focus feature within the application.& The application shall provide this by displaying the focus button within the navigation bar, and taking the user to the focus screen when it is tapped.\\
+        \hline
+        The user shall be able to start and stop the focus timer.&  The application shall provide this by displaying a start and stop button within the focus view.\\
+        \hline
+        The user shall be able to amend the focus timer settings within the focus view.& The application shall do this by allowing allowing swipe left functionality and then displaying the timer settings.\\
+        \hline
+        The user shall be able to view all outstanding items that have been input into the application.& The application shall do this by displaying all items when the all items button displayed in the navigation bar is tapped.\\
+        \hline
+        The user shall be able to view items that are due soon, items that are considered habits and labelled items as well as the rest of the added items in the all items screen.& The application shall do this by grouping items based on their theme.\\
+        \hline
+        The user shall be able to search for items.& The application shall do this by displaying a filter button, which when tapped, displays a search bar, and then filtering items based on the user input.\\
+        \hline
+        The user shall be able to edit an item.&  The application shall do this by taking the user to the edit item view when the user taps on the item.\\
+        \hline
+        The user shall be able to delete an item.& The application shall do this by allowing the user to swipe any direction on an item and then removing the item from being displayed, as well as deleting it from the database.\\
+        \hline
+        The user shall be able to navigate to the add item screen.& The application shall do this by displaying an add button on the dashboard, and navigating to the add item screen when that button is tapped.\\
+        \hline
+        The user shall be able to add a title, date, time, reminder, reminder date, reminder time, and labels to an item, as well as having an option to add it to their native iOS calendar.& The application shall do this by displaying ways to enter this data on the add item screen.\\
+        \hline
+        The user shall go back to the dashboard without saving an item.& The application shall provide this by displaying a back button on the add item screen.\\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{7cm}|p{7cm}|}
+        \hline
+        Functional& Non-functional\\
+        \hline
+        The user shall be able to save an item after editing has completed.& The application shall provide this by displaying a save button at the bottom of the add item screen.\\
+        \hline
+        The user shall go back to the dashboard after they have saved a new item.& The application shall provide this by navigating to the dashboard after the save button has been tapped.\\
+        \hline
+        The user shall be able to view the "friends" screen.& The application shall provide this by displaying a friends button in the navigation bar, that when tapped, displays the "friends" screen.\\
+        \hline
+        The user shall be able to view their list of friends along with their friends' streak points.& The application shall provide this by retrieving their friends' user data and displaying these friends in a list, with their points next to the name on the "friends" screen.\\
+        \hline
+        The user shall be able to view their own streak count on the "friends" screen.& The application shall display the users' streak points at the bottom of the "friends" screen.\\
+        \hline
+        The user shall be able to add a friend.& The application shall display an add button on the "friends" screen, that when tapped, displays a box to add a user.\\
+        \hline
+        The user shall be able to find a friend via email address.& The application shall search the user database using an email address, returning a user if an email address matches.\\
+        \hline
+        The user shall be able to view a detailed view of a friend.& The application shall display a detailed friend view when a friend is tapped.\\
+        \hline
+        The user shall be able to view a friends streak points and a delete option in the detailed view.& The application shall display the email of the user, their streak points, and shall display a delete button at the bottom of the screen.\\
+        \hline
+        The user shall be able to delete a friend.& The application shall remove a friend from the users' friend list when the delete button is tapped.\\
+        \hline
+        The user shall be able to go back to the "friends" screen.& The application shall display a back button the the friend detail screen, that when tapped will display the "friends" screen.\\
+        \hline
+        The user shall be able to go to the settings screen.& The application shall display a settings button in the navigation bar, which when tapped, shall display the settings screen.\\
+        \hline
+        The user shall be able to edit their email and/or password, as well as connect the native iOS calendar, delete their account and activate bio-metric authentication.& The application shall display options to change the email or password, a toggle to allow access to the iOS calendar, a delete button and a toggle to activate bio-metric authentication.\\
+        \hline
+        The user shall be able to delete their account.& The application shall provide a delete button, which when tapped, will remove the user account on the database along with any related information, and will then display the sign up screen.\\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{7cm}|p{7cm}|}
+        \hline
+        Functional& Non-functional\\
+        \hline
+        The user shall receive notifications.& The application shall send notifications at times corresponding with the dates and times set up for reminders. (Provided the user has allowed notifications on application set-up).\\
+        \hline
+        & The application shall store the users' name, email and password securely in the database.\\
+        \hline
+        & The application shall download application data from the database when the application is opened.\\
+        \hline
+    \end{tabular}
+\end{table}

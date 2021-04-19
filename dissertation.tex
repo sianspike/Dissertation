@@ -1,0 +1,56 @@
+\documentclass[11pt, a4paper, twoside, openright]{custard}
+\input{customisation}
+\usepackage[big,binding=.6cm]{layaureo}
+\gdef\clearforchapter{}
+\chapterstyle{article}
+\setlength{\parindent}{0pt}
+\titlespacing*{\section}{0pt}{\parskip}{\parskip}
+\titlespacing*{\subsection}{0pt}{\parskip}{\parskip}
+\titlespacing*{\subsubsection}{0pt}{\parskip}{\parskip}
+
+\begin{document}
+	
+\title{Agendum - Productivity Application}
+\author{Sian Pike\protect\\{\normalsize 950574}}
+\awardinginst{Swansea University}
+\degree{Bachelor of Science} 
+\department{Department of Computer Science}
+\university{Swansea University}
+\unilogo{graphics/swansea.png}
+\date{\today}
+\frontmatter%
+\maketitle
+\cleardoublepage
+\declaration
+\cleardoublepage
+
+\begin{abstract}
+	\setcounter{page}{1}
+	Procrastination is a common issue for all age groups in our society.  There is evidence that if a plan is made to complete specific tasks during a time frame, procrastination during this time is less likely.  This project aims to increase productivity and make time management easier by producing an iOS application that can be used as a task manager.
+	
+	Based on market research and the results of a small questionnaire carried out in the requirements analysis phase, an application was built using XCode, specifically for iPhone devices.  The completed application provides the ability to store items of various categories, connect to a users' calendar and suggest tasks, connect to other users of the application and provide a focus timer.
+\end{abstract}
+\newpage
+	
+\tableofcontents*
+\mainmatter
+
+\input{./chapter/introduction}
+\input{./chapter/background_research}
+
+\input{./chapter/legal_social_ethical_issues}
+
+\input{./chapter/SDL}
+
+\input{./chapter/deliverables}
+
+\input{./chapter/reflection}
+
+\input{./chapter/conclusion}
+\newpage
+\bibintoc
+\bibliography{citations} 
+\appendix
+\addappheadtotoc
+\input{./chapter/appendix}
+\end{document}

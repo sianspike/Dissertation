@@ -1,0 +1,53 @@
+\chapter{Legal, Professional, Social and Ethical Issues}
+	\label{chap:legal_social_ethical_issues}
+	In this chapter, the issues that could have arisen during the project will be discussed.  In Section~\ref{sec:issues_legal}, the legal issues that a mobile application developer must consider will be explored, and then in Sections~\ref{sec:issues_professional} and~\ref{sec:issues_ethical}, the social, ethical and professional considerations will be discussed.
+	
+	\section{Legal Issues}
+	    \label{sec:issues_legal}
+	    \subsection{General Data Protection Regulation}
+	    When developing software that handles any personal data it must comply with the principles defined in the General Data Protection Regulation (GDPR) or similar laws in other countries.  The key principles defined in the GDPR are as follows:
+	    \begin{itemize}[noitemsep]
+	        \item Lawfulness, fairness and transparency.
+	        \item Purpose Limitation.
+	        \item Data minimisation.
+	        \item Accuracy.
+	        \item Storage Limitation.
+	        \item Integrity and confidentiality.
+	        \item Accountability.
+	    \end{itemize}
+	    \cite{ico_principles}
+	    
+	    The basic definition of these principles is that the personal data stored by companies should only be used for the purpose they have been specified, excessive data should not be stored, the data should be stored safely, and the reason the data is being stored should be transparent to the consumer.  If the software fails to comply with these principles, the software developer(s) responsible and/or the company can face lawful action.
+	    
+	    In this projects' context, these principles were kept in mind, and an effort has been made to ensure only the data needed for the application is stored.  The personal data used in the application includes email and bio-metrics (for biometric authentication).  The purpose of the email address is to give a user a unique account which can then be used to log in and connect with other users.  Biometric authentication is entirely optional and asks the users' permission before being activated.  The user is also presented with a message as to why they may want to activate the biometric authentication.  Email is stored in Firebase, which has its own security, as well as the access rules that were implemented manually when the database was set up.  The storage of biometric data is handled by the iOS operating system and is stored in the Apple Keychain associated with the Apple account logged into the iPhone.  With all of the above in place, it can be assumed that the application complies with the GDPR.
+	    
+	    \subsection{Intellectual Property Rights}
+	    Another legal aspect of software engineering is whether to apply for intellectual property rights.  Having intellectual property protection means that other companies cannot steal or copy a recognised products' designs or implementation without facing legal action.  Types of intellectual property rights include copyright, patenting and trademarks\cite{intellectual_property}.
+	    
+	    Applying for intellectual property rights was never considered for this project as the application had a limited purpose of only being used for a university project.  However, if the application were to  be put on the App Store, having intellectual property rights would  be considered.
+	    
+	\section{Professional Issues}
+	    \label{sec:issues_professional}
+	    
+	    \subsection{British Computer Society Code of Conduct}
+	    There are many different codes of conduct from various professional bodies that can be followed when developing software.  These codes of conduct are not required by law but can make the software more accessible and within the public interest.  In this section, the code of conduct provided by the British Computer Society will be discussed.  The BCS code of conduct is comprised of four main principles:
+	    \begin{itemize}[noitemsep]
+	        \item You make IT for everyone.
+	        \item Show what you know, learn what you don't.
+	        \item Respect the individual or organisation you work for.
+	        \item Keep IT real. Keep IT professional. Pass IT on.
+	    \end{itemize}
+	    \cite{bcs}
+	   
+	   These principles ensure that everyone is treated equally. No one claims they have a competency level that they do not have and every software engineer claims responsibility for their work. They uphold their reputation, as well as the reputation of BCS.
+	   
+	   Although these principles were not considered from the beginning of the project, they have been upheld throughout.  Any third party that has been interacted with during the project has been treated equally, and everyone involved in the project has taken responsibility for their work.
+	    
+	\section{Social and Ethical Issues}
+	    \label{sec:issues_ethical}
+	    
+	    \subsection{Privacy}
+	    A popular topic regularly covered in the technology realm is privacy, particularly user privacy.  Apart from personal data, which is protected by law, the ethics of how non-personal data should be stored tends to be a grey area.  In the context of the application, an attempt has been made to ensure the least amount of data possible is stored. If it is stored, it is done securely in a Firebase database and requires user authentication to be accessed.  All data apart from the unique user ID's can be seen and downloaded by the user within the application, so there is no 'secret' data being withheld from the user.
+	    
+	    \subsection{Price}
+	    Another topic that is debatable in terms of ethics is the price software should cost.  Many applications and services now offer a subscription-based payment system rather than a one-off payment system. Even though this is an excellent way to ensure the software is maintained, it also generates more profit for the company.  When determining whether there should be a cost for the application produced in this project, the target market was the primary consideration.  The application is designed to be used by anyone who wants to be more deliberate with managing their time, but the fact that students, in general, do not seem to have a suitable free-to-use application was the inspiration for this project.  Therefore, the decision was made to make the application completely free without advertisements to ensure it remains accessible to everyone, especially those who cannot afford to pay for an application of this type.
